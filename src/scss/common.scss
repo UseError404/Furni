@@ -1,0 +1,53 @@
+// Заголовки, общие БЄМ блоки и проче...
+section {
+  transition: all 0.4s ease;
+  background: #EFF2F1;
+  font-family: '', sans-serif;
+}
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 36px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 30px;
+  background: #2F2F2F;
+  color: #fff;
+  border: 2px solid;
+
+  &:hover {
+    background: none;
+    border: 2px solid #2F2F2F;
+    color: #2F2F2F;
+  }
+}
+
+.btn-yellow {
+  color: #2F2F2F;
+  background: #F9BF29;
+  border: 2px solid rgba(255, 255, 255, 0);
+
+  &:hover {
+    color: #fff;
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.29);
+  }
+}
+
+.btn-border {
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.29);
+
+  &:hover {
+    color: #2F2F2F;
+    background: #F9BF29;
+    border: 2px solid rgba(255, 255, 255, 0);
+  }
+}
+

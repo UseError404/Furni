@@ -1,0 +1,75 @@
+.mobile-menu {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -100%;
+  background-color: #3B5D50;
+  overflow-x: hidden;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header-menu {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 43px;
+      transition: all 0.4s ease;
+
+      .item {
+        text-align: center;
+        a {
+          font-family: 'Inter', serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 42px;
+          color: #FFF;
+          opacity: 0.8;
+          transition: all 0.4s ease 0s;
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 0;
+            height: 5px;
+            background: #F9BF29;
+            border-radius: 0;
+            transition: all 0.4s ease 0.1s;
+          }
+
+          &:hover {
+            opacity: 0.9;
+
+            &::before {
+              width: 100%;
+              border-radius: 2px;
+            }
+          }
+        }
+
+        .active {
+          opacity: 1;
+
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-menu-open {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
